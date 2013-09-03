@@ -1,0 +1,55 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+/***** HEADER *****/
+#header {
+    background: #03526B;
+	border-bottom: none;
+}
+  
+#header .nav > li > a {
+    color: white;
+    text-shadow: none; 
+}
+
+#header .nav > .active > a{
+    text-decoration: none;
+    background-color: #073E5E; 
+}
+
+/***** MAIN QUESTIONS *****/
+#wraptextarea {
+	margin-top: 70px;
+}
+#wraptextarea textarea{
+	width: 80%;
+	display: block;
+	height: 100px;
+	resize: none;
+	-webkit-box-shadow: 0px 3px 18px #727272;
+	-moz-box-shadow: 0px 3px 18px #727272;
+	box-shadow: 0px 3px 18px #727272;
+} 
+.single-question{
+    margin-bottom: 20px;
+	border: solid 1px #C7C6C6;
+	padding: 9px;
+}
+
+.single-question .question{
+	font-weight: bold;
+}
+
+
+.single-question > .delete-response{
+    font-weight: bold;
+	font-size: 1.2em;
+}
+.single-question > .delete-response:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  .navbar.navbar-fixed-top
+    .navbar-inner#header
+      .container			
+        ul.nav
+          li.active
+            a(href="/perfil") Perfil
+          li
+            a(href="/questions/response") Preguntas
+          li
+            a(href="/home/settings") Configuracion	
+
+  .container#wrapper-body
+    .span10
+      #wraptextarea
+        h4 Pregunta algo
+        form(method="post" ,action="/question/add")
+          textarea(name="content")#question-val
+          button.btn(type="submit") Preguntar
+      #wrapquestions
+        include lista

@@ -1,0 +1,14 @@
+
+
+block content
+  
+        each question in questions
+          .single-question     
+            form(method="post",action="/question/" + question.id)
+             input(name='_method',value='DELETE',type='hidden')
+             button.btn.pull-right.delete-response(type='submit') X
+             p.question #{question.question}
+             p #{question.response}
+       form(method="get",action="/question/viewmore" )
+       button.btn.btn-primary#view-more(data-skip="10") Ver mas
+       
